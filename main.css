@@ -1,0 +1,135 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+
+:root {
+    box-sizing: border-box;
+    --brand-color: #333;
+    --dark: #000;
+    --medium-gray: #cccccc;
+    --text-color: hsl(210, 11%, 15%);
+    --gray: hsl(210, 7%, 56%);
+    --light-gray: hsl(210, 17%, 95%);
+    --extra-light-gray: hsl(210, 17%, 98%);
+    --white: #ffffff;
+    --red: hsl(342, 63%, 46%);
+    --roboto: 'Roboto', sans-serif;
+    --sansita: 'Sansita', sans-serif;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--roboto);
+    line-height: 1.6;
+    letter-spacing: .03em;
+    background-color: var(--extra-light-gray);
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--sansita);
+    letter-spacing: .04em;
+}
+
+a {
+    color: var(--dark);
+}
+
+nav {
+    position: sticky;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+}
+
+a:visited {
+    color: var(--brand-color);
+}
+
+a:hover {
+    color: var(--brand-color);
+}
+
+a:active {
+    color: var(--red);
+}
+
+
+/* navigation start */
+
+.nav-container {
+    background-color: var(--white);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.nav-container__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 67.5em;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.home-link {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-family: var(--sansita);
+    font-weight: bold;
+    letter-spacing: .04em;
+    text-decoration: none;
+}
+
+.top-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.top-nav>li+li {
+    margin-left: .625em;
+}
+
+.top-nav a {
+    display: block;
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding: .3rem 1.25rem;
+    color: var(--text-color);
+    background: var(--medium-gray);
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.top-nav a:hover {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.top-nav__featured>a {
+    color: var(--brand-color);
+    background-color: var(--white);
+}
+
+.top-nav__featured>a:hover {
+    color: var(--dark);
+    /* font-weight: bold; */
+    background-color: var(--medium-gray);
+    border: 1px solid var(--dark);
+}
+
+
+/* navigation end */
+
+
+/* Hero start */
